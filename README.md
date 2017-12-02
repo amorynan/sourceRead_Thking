@@ -1,3 +1,6 @@
-# My Awesome Book
+# Thinking And Notes for A variety of source code
 
-This file file serves as your book's preface, a great place to describe your book's content and ideas.
+There are complete hotch-potch of knowledge in JAVA , like spring code, jvm code , hbase code or more, if I have enough time, I will keeping going on, On the one hand,  deepening  my memory and comprehension for these code, to see whether if
+
+ there will fly new sparks,hhhh.
+
