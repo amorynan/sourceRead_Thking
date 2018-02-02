@@ -1,3 +1,6 @@
-# Table of content
+# Summary
 
-* [First Chapter](chapter1.md)
+* [Introduction](README.md)
+* [DesignMode](chapter1.md)
+  * [Adaptor](chapter1/design-mode.md)
+
