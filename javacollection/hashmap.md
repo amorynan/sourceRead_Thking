@@ -145,7 +145,6 @@ new Entry<>(hash, key, value, e);
         table = newTable;
         threshold = (int)Math.min(newCapacity * loadFactor, MAXIMUM_CAPACITY + 1);
     }
-
 ```
 
 resize\(\)没有做到什么，最主要也就是扩了容，将原空间放大两倍，注意这里的扩容，还是进行了new Table的，所以扩容带来的副作用就是你得将原来的数据进行再一次的重新安排位置，也就是进入了transfer\(\)
@@ -175,4 +174,8 @@ e.next = newTable\[i\];
 newTable\[i\] = e;
 
 e = next;
+
+因为是复习笔记我就不多写，贴上我以前写过的blog有详解
+
+[http://www.cnblogs.com/AmoryWang-JavaSunny/p/7487373.html](http://www.cnblogs.com/AmoryWang-JavaSunny/p/7487373.html)
 
