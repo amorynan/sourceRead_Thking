@@ -131,7 +131,48 @@ new Entry<>(hash, key, value, e);
 
 其次对于resize来说
 
+```
+ void resize(int newCapacity) {
+        Entry[] oldTable = table;
+        int oldCapacity = oldTable.length;
+        if (oldCapacity == MAXIMUM_CAPACITY) {
+            threshold = Integer.MAX_VALUE;
+            return;
+        }
 
+        Entry[] newTable = new Entry[newCapacity];
+        transfer(newTable, initHashSeedAsNeeded(newCapacity));
+        table = newTable;
+        threshold = (int)Math.min(newCapacity * loadFactor, MAXIMUM_CAPACITY + 1);
+    }
 
+```
 
+resize\(\)没有做到什么，最主要也就是扩了容，将原空间放大两倍，注意这里的扩容，还是进行了new Table的，所以扩容带来的副作用就是你得将原来的数据进行再一次的重新安排位置，也就是进入了transfer\(\)
+
+```
+    void transfer(Entry[] newTable, boolean rehash) {
+        int newCapacity = newTable.length;
+        for (Entry<K,V> e : table) {
+            while(null != e) {
+                Entry<K,V> next = e.next;
+                if (rehash) {
+                    e.hash = null == e.key ? 0 : hash(e.key);
+                }
+                int i = indexFor(e.hash, newCapacity);
+                e.next = newTable[i];
+                newTable[i] = e;
+                e = next;
+            }
+        }
+    }
+```
+
+在这里面主要就是这段代码会很有可能形成死循环
+
+e.next = newTable\[i\];
+
+newTable\[i\] = e;
+
+e = next;
 
