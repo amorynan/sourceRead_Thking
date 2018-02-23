@@ -4,5 +4,11 @@
 
 
 
+设计模式：
+
+abstract class -- "is a" 
+
+interface -- “like a”
+
 
 
