@@ -179,3 +179,15 @@ e = next;
 
 [http://www.cnblogs.com/AmoryWang-JavaSunny/p/7487373.html](http://www.cnblogs.com/AmoryWang-JavaSunny/p/7487373.html)
 
+
+
+总而言之：
+
+hashmap ： 装时：先计算桶索引--_**hash（object），高位运算，取模运算（巧妙采用二进制的&）**_
+
+                      put ：![](/assets/hashMap put方法执行流程图 %281%29.png)       jdk1.8 比 jdk1.7 : 
+
+主要是在resize的时候，再次复制原元素到新的buckt中的时候，计算索引，1.7中重新计算了hash，1.8中直接看高1位的是1还是0来决定它扩容后的index， 是1的话，就是原位置+oldCap， 是0的话位置不变，原理图如下：
+
+![](/assets/hashMap 1.8 哈希算法例图1.png)![](/assets/hashMap 1.8 哈希算法例图2.png)还有红黑树极大的优化了查找的过程
+

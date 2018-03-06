@@ -10,4 +10,6 @@
   * [TCP\_shakehands\_discount](network/tcpshakehands-discount.md)
 * [OOP](oop.md)
   * [abstract class and interface](oop/abstract-class-and-interface.md)
+* [java VM](java-vm.md)
+  * [GC 及其优化](java-vm/gc-ji-qi-you-hua.md)
 
