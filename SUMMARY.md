@@ -8,6 +8,7 @@
   * [HashMap](javacollection/hashmap.md)
 * [NetWork](network.md)
   * [TCP\_shakehands\_discount](network/tcpshakehands-discount.md)
+  * [http 从域名解析开始](network/http-cong-yu-ming-jie-xi-kai-shi.md)
 * [OOP](oop.md)
   * [abstract class and interface](oop/abstract-class-and-interface.md)
 * [java VM](java-vm.md)
