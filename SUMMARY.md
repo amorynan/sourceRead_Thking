@@ -6,6 +6,7 @@
   * [Factory + reflection + property](chapter1/factory-+-reflection-+-property.md)
 * [JavaCollection](javacollection.md)
   * [HashMap](javacollection/hashmap.md)
+  * [List](javacollection/list.md)
 * [NetWork](network.md)
   * [http 从域名解析开始](network/http-cong-yu-ming-jie-xi-kai-shi.md)
 * [OOP](oop.md)
