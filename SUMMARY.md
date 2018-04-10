@@ -21,5 +21,5 @@
 * [Sql](sql.md)
   * [B+数据结构--mysql索引](sql/bshu-ju-jie-6784-mysql-suo-yin.md)
 * [IOC](ioc.md)
-  * AOP
+  * [AOP](ioc/aop.md)
 
