@@ -17,4 +17,6 @@
   * [JMM](java-vm/jmm.md)
 * [Lock](lock.md)
   * [Volatile](lock/volatile.md)
+* [Sql](sql.md)
+  * [B+数据结构--mysql索引](sql/bshu-ju-jie-6784-mysql-suo-yin.md)
 
