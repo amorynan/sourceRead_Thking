@@ -13,4 +13,8 @@
   * [多态 -- 语法和底层实现角度](oop/duo-tai-yu-fa-he-di-ceng-shi-xian-jiao-du.md)
 * [java VM](java-vm.md)
   * [GC 及其优化](java-vm/gc-ji-qi-you-hua.md)
+  * classLoader
+  * [JMM](java-vm/jmm.md)
+* [Lock](lock.md)
+  * [Volatile](lock/volatile.md)
 
